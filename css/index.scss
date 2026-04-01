@@ -1,0 +1,176 @@
+// Aspect ratio is around 6.25 : 1
+$text-container-height: 76px;
+$text-container-width: calc($text-container-height * 6.25);
+$text-font-size: 44px;
+$text-bg-color: rgba(155, 227, 63, 0.3);
+$text-color: yellow;
+
+// corner
+$width: 3px;
+$ratio: 5;
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    background-color: black;
+
+    color: white;
+}
+
+.main {
+    font-size: $text-font-size;
+
+    padding: 10px 0 0 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-container {
+    margin: calc($text-container-width / 5) auto 0 auto;
+
+    position: relative;
+    box-sizing: border-box;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    user-select: none;
+    width: $text-container-width;
+    height: $text-container-height;
+
+    background-color: $text-bg-color;
+
+    animation: background-color-change 1s infinite;
+    animation-timing-function: ease-in-out;
+
+    .text {
+        > span {
+            font-size: $text-font-size;
+        } 
+        
+        // clear space between inline block
+        font-size: 0;
+        letter-spacing: 1px;
+
+        margin: (0.05 * $text-font-size + ($ratio - 1) * $width) 0 (0.05 * $text-font-size + ($ratio - 1) * $width) 0;
+        color: $text-color;
+        font-family: "DINEngschrift";
+
+        position: relative;
+
+        .separator {
+            position: relative;
+
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    .corner {
+        .left-top {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            #left-top-1 {
+                width: $width * $ratio;
+                height: $width;
+            }
+
+            #left-top-2 {
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+        }
+
+        .right-top {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            #right-top-1 {
+                width: $width * $ratio;
+                height: $width;
+            }
+
+            #right-top-2 {
+                margin-left: $width * ($ratio - 1);
+
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+        }
+
+        .left-bottom {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+
+            #left-bottom-1 {
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+
+            #left-bottom-2 {
+                width: $width * $ratio;
+                height: $width;
+            }
+        }
+
+        .right-bottom {
+            > div {
+                background-color: yellow;
+            }
+
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+
+            #right-bottom-1 {
+                margin-left: $width * ($ratio - 1);
+
+                width: $width;
+                height: $width * ($ratio - 1);
+            }
+
+            #right-bottom-2 {
+                width: $width * $ratio;
+                height: $width;
+            }
+        }
+    }
+}
+
+@keyframes background-color-change {
+    0% {
+        background-color: $text-bg-color;
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: $text-bg-color;
+    }
+}
+

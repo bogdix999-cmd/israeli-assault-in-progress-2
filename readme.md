@@ -2,7 +2,7 @@
 
 A recreate of the "Police Assault in Progress" indicator from Payday 2.
 
-[Demo]([https://bogdix-999.github.io/Police-Assault-in-Progress+2/index.html](https://github.com/bogdix999-cmd/israeli-assault-in-progress-2.git))
+[Demo]([[https://bogdix-999.github.io/Police-Assault-in-Progress+2/index.html](https://github.com/bogdix999-cmd/israeli-assault-in-progress-2.git](https://bogdix999-cmd.github.io/israeli-assault-in-progress-2/)))
 
 ## Getting Started
 

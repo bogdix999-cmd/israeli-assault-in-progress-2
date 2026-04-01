@@ -1,6 +1,6 @@
-# Police Assault in Progress
+# Israeli Assault in Progress
 
-A recreate of the "Police Assault in Progress" indicator from Payday 2.
+A recreate of the "Police Assault in Progress" indicator from Payday 2. But israel.
 
 [demo](https://bogdix999-cmd.github.io/israeli-assault-in-progress-2/)
 

@@ -2,7 +2,7 @@
 
 A recreate of the "Police Assault in Progress" indicator from Payday 2.
 
-[Demo](https://asvrada.github.io/Police-Assault-in-Progress/index.html)
+[Demo](https://bogdix-999.github.io/Police-Assault-in-Progress+2/index.html)
 
 ## Getting Started
 
